@@ -4,7 +4,6 @@ html{
 
 body{
     margin: 0;
-    justify-content: center;
 }
 
 header{
@@ -52,24 +51,29 @@ nav #active {
 }
 
 div#content{
-    width: 90%;
+    display: flex;
+    width: 95%;
+    margin:auto;
+    padding:10px;
     flex-direction: column;
 }
 
 div section{
     width: 100%;
+    margin: 10px 0;
     background-color: rgba(255,255,255, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    margin:10px;
+    
 }
 
 div section h2{
     padding:10px;
+    text-align: center;
 }
 
 div section article{
-    padding:5px;
+    padding:10px;
 }
 
 footer{
@@ -88,10 +92,11 @@ footer{
         width: 90%;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
+        flex-wrap:nowrap;
     }
 
     div section{
         width: 50%;
+        margin:10px;
     }
 }
