@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    justify-content: center;
+}
+
+header{
+    margin:0;
+    padding:0;
+    background-color: blue;
+}
+
+header h1{
+    margin:0;
+    padding:10px 5px;
+    text-align: center;
+}
+
+nav {
+    width: 85%;
+    margin:auto;
+    padding:0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    width: 100%;
+    margin:5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 0.6);
+    transition: background-color 0.3s;
+    
+}
+
+nav a:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+}
+
+nav #active {
+    background-color: rgba(0, 123, 255, 0.8);
+    font-weight: bold;
+}
+
+div#content{
+    width: 90%;
+    flex-direction: column;
+}
+
+div section{
+    width: 100%;
+    background-color: rgba(255,255,255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin:10px;
+}
+
+div section h2{
+    padding:10px;
+}
+
+div section article{
+    padding:5px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: blue;
+}
+
+@media only screen and (min-width: 700px) {
+    nav{
+        flex-direction: row;
+    }
+
+    div#content{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    div section{
+        width: 50%;
+    }
+}
