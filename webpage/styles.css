@@ -9,7 +9,7 @@ body{
 header{
     margin:0;
     padding:0;
-    background-color: blue;
+    background-color: lightblue;
 }
 
 header h1{
@@ -80,7 +80,7 @@ footer{
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    background-color: blue;
+    background-color: lightblue;
 }
 
 @media only screen and (min-width: 700px) {
